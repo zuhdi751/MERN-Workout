@@ -26,7 +26,7 @@ export const WorkoutsContextProvider = ( {children} ) => {
 
     // return a template. in this case we use WorkoutsContext.Provider
     return (
-        <WorkoutsContext.Provider value={{state, dispatch}}>
+        <WorkoutsContext.Provider value={{...state, dispatch}}>
             { children }
         </WorkoutsContext.Provider>
     )
